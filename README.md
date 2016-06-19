@@ -24,3 +24,8 @@ container's `/data` directory.
 ```bash
 docker run --rm -v $(pwd):/data hamroctopus/graphviz:2.38.0 custom-make-process
 ```
+
+License
+-------
+
+This container is protected by the GPLv3 license.
