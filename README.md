@@ -17,18 +17,12 @@ It is based on [ubuntu:14.04.4](https://hub.docker.com/_/ubuntu/).
 Usage
 -----
 
-By default (e.g. without arguments) this container will execute `make` in its
-`/data` directory
-
-```bash
-docker run -v $(pwd):/data hamroctopus/graphviz:2.38.0
-```
-
-If arguments are supplied, they will be passed to a `bash` shell inside the
+By default, this container will leave the user in a `bash` shell inside the
 container's `/data` directory.
 
 ```bash
-docker run -v $(pwd):/data hamroctopus/graphviz:2.38.0 /data/custom-make-script
+docker run -v $(pwd):/data hamroctopus/graphviz:2.38.0 
+# Run make target(s)
 ```
 
 License
