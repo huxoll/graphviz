@@ -1,11 +1,10 @@
 Overview
 ========
-[![Build Status](https://travis-ci.org/EricCrosson/graphviz.svg?branch=graphviz)](https://travis-ci.org/EricCrosson/graphviz)
-[![image](https://imagelayers.io/badge/hamroctopus/graphviz:2.38.0.svg)](https://imagelayers.io/?images=hamroctopus/graphviz:latest)
-[![image](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/hamroctopus/graphviz/)
-[![image](https://img.shields.io/docker/pulls/hamroctopus/graphviz.svg?maxAge=2592000)](https://hub.docker.com/r/hamroctopus/graphviz/)
-[![image](https://img.shields.io/docker/stars/hamroctopus/graphviz.svg?maxAge=2592000)](https://hub.docker.com/r/hamroctopus/graphviz/)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
+[![Build Status](https://travis-ci.org/huxoll/graphviz.svg?branch=master)](https://travis-ci.org/huxoll/graphviz)
+[![image](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/huxoll/graphviz/)
+[![image](https://img.shields.io/docker/pulls/huxoll/graphviz.svg?maxAge=2592000)](https://hub.docker.com/r/huxoll/graphviz/)
+[![image](https://img.shields.io/docker/stars/huxoll/graphviz.svg?maxAge=2592000)](https://hub.docker.com/r/huxoll/graphviz/)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://hub.docker.com/r/huxoll/graphviz/)
 
 This docker container provides
 
@@ -14,6 +13,9 @@ This docker container provides
 
 It is based on [ubuntu:14.04.4](https://hub.docker.com/_/ubuntu/).
 
+The container was originally developed [Eric Crosson] (https://github.com/EricCrosson). This version removes the entrypoint for
+better usage with Gitlab CI.
+
 Usage
 -----
 
@@ -21,8 +23,9 @@ By default, this container will leave the user in a `bash` shell inside the
 container's `/data` directory.
 
 ```bash
-docker run -v $(pwd):/data hamroctopus/graphviz:2.38.0 
+docker run -it -v $(pwd):/data huxoll/graphviz:2.38.0
 # Run make target(s)
+make
 ```
 
 License
