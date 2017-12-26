@@ -19,4 +19,4 @@ RUN yes | gdebi $HOME/graphviz-2.38.0.deb
 WORKDIR /data
 
 COPY ./docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/bin/bash"]
