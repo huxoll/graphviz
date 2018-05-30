@@ -11,7 +11,7 @@ This docker container provides
   - [graphviz](http://www.graphviz.org/)-2.38.0
   - [GNU make](https://www.gnu.org/software/make/)
 
-It is based on [ubuntu:14.04.4](https://hub.docker.com/_/ubuntu/).
+It is based on [ubuntu:16.04](https://hub.docker.com/_/ubuntu/).
 
 The container was originally developed [Eric Crosson] (https://github.com/EricCrosson). This version removes the entrypoint for
 better usage with Gitlab CI.
